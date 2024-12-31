@@ -1,0 +1,8 @@
+[
+  { "name": "JAVASCRIPT", "image": "/assets/js-logo.svg" },
+  { "name": "FIGMA", "image": "/assets/figma-logo.svg" },
+  { "name": "NODEJS", "image": "/assets/nodejs-logo.svg" },
+  { "name": "REACT", "image": "/assets/react-logo.svg" },
+  { "name": "REDUX", "image": "/assets/redux-logo.svg" },
+  { "name": "VSCODE", "image": "/assets/vscode-logo.svg" }
+]
