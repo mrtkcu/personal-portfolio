@@ -31,17 +31,17 @@ function Skills() {
     <>
       <section className="mt-10 flex flex-col items-center justify-center mb-10 h-[400px] ">
         <h3 className="text-5xl leading-snug mb-10 font-medium ">Skills</h3>
-        <div className="flex flex-row gap-10">
+        <div className="flex flex-row gap-10 xs:grid xs:grid-cols-3 xs:gap-y-4">
           {skills.map((skill, index) => (
             <div key={index} className="">
-              <div className="mb-3 lg-sm2:w-[100px] lg-sm2:h-[100px] sm2:w-[50px] sm2:h-[50px] ">
+              <div className="mb-3 lg-sm2:w-[100px] lg-sm2:h-[100px] sm2:w-[50px] sm2:h-[50px] xs:mb-2">
                 <img
                   src={skill.image}
                   alt={`${skill.name} logo`}
                   className="rounded"
                 />
               </div>
-              <p className="text-2xl text-grey text-center tracking-wide lg-sm2:text-lg  sm2:text-xs ">
+              <p className="text-2xl text-grey text-center tracking-wide lg-sm2:text-lg  sm2:text-xs xs:text-center xs:text-[0.5rem]">
                 {skill.name}
               </p>
             </div>

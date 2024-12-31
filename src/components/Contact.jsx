@@ -1,10 +1,10 @@
 function Contact() {
   return (
-    <section className="flex flex-row justify-center items-center pt-[10rem] sm2:pt-[3rem] pb-[5rem] gap-[4rem]">
-      <div className="text-5xl font-light leading-snug sm2:text-4xl">
+    <section className="flex flex-row justify-center items-center pt-[10rem] sm2:pt-[3rem] pb-[5rem] gap-[4rem] xs:flex-col xs:mt-[3rem]">
+      <div className="text-5xl font-light leading-snug sm2:text-4xl xs:text-3xl">
         <p className="relative ">
           Let's work{" "}
-          <span className="absolute top-[2.75rem] right-[4rem] w-[250px] h-[20px] bg-lightblue -z-10 rounded-lg"></span>{" "}
+          <span className="absolute top-[3.75rem] right-[4rem] w-[250px] h-[20px] bg-lightblue -z-10 rounded-lg xs:top-[1.75rem] xs:w-[220px] xs:h-[15px]"></span>{" "}
           together on
         </p>
         <p className="text-right">your next product.</p>

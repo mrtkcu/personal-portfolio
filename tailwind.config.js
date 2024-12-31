@@ -34,6 +34,7 @@ export default {
         "lg-sm": { max: "1125px" },
         "lg-sm2": { max: "1072px" },
         sm2: { max: "813px" },
+        xs: { max: "522px" },
       },
     },
   },
