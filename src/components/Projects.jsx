@@ -1,11 +1,11 @@
 function Projects() {
   return (
-    <section className="">
+    <section className="dark:bg-gray-800">
       <h4 className="text-4xl leading-snug pt-5 pb-10 font-medium text-center">
         Projects
       </h4>
-      <div className="flex flex-row gap-20 w-[50%] mx-auto overflow-y-visible p-3 z-0 xl-sm:w-[70%] xl-sm:gap-5 lg-sm2:w-[100%] lg-sm2:gap-5 sm2:w-[100%] sm2:gap-5 xs:p-0">
-        <div className=" flex flex-col justify-between bg-blue3 dark:bg-lightblue w-[49%] rounded-lg sm2:justify-start sm2:max-h-[500px] xs:max-h-[325px]">
+      <div className="flex flex-row gap-20 max-h-[100%] w-[50%] mx-auto overflow-y-visible p-3 z-0 xl-sm:w-[70%] xl-sm:gap-5 lg-sm2:w-[100%] lg-sm2:gap-5 sm2:w-[100%] sm2:gap-5 xs:p-0">
+        <div className=" flex flex-col justify-between bg-blue3 dark:bg-projectdark w-[49%] rounded-lg sm2:justify-start sm2:max-h-[500px] xs:max-h-[325px]">
           <div className="p-10 flex flex-col gap-5 font-playfair xs:p-2 xs:gap-3 dark:text-gray-800">
             <h5 className="font-playfair text-3xl font-semibold sm2:text-xl xs:text-base">
               Project Portfolio
@@ -62,7 +62,7 @@ function Projects() {
             />
           </div>
         </div>
-        <div className=" flex flex-col justify-between bg-blue3 dark:bg-lightblue w-[49%] rounded-lg sm2:justify-start sm2:max-h-[500px] xs:max-h-[325px]">
+        <div className=" flex flex-col justify-between bg-blue3 dark:bg-projectdark w-[49%] rounded-lg sm2:justify-start sm2:max-h-[500px] xs:max-h-[325px]">
           <div className="p-10 flex flex-col gap-5 font-playfair xs:p-2 xs:gap-3 dark:text-gray-800">
             <h5 className="font-playfair text-3xl font-semibold sm2:text-xl xs:text-base">
               Project Portfolio

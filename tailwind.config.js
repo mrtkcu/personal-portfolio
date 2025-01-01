@@ -29,6 +29,7 @@ export default {
         white4: "#DDEEFE",
         yellow: "#FFE86E",
         darkyellow: "#f6b93b",
+        projectdark: "#A5BFCC",
       },
       screens: {
         "xl-sm": { max: "1480px" },

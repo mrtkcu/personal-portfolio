@@ -29,7 +29,7 @@ function Skills() {
 
   return (
     <div className="relative">
-      <section className="mt-10 flex flex-col items-center justify-center mb-10 h-[400px] relative">
+      <section className="mt-10 flex flex-col items-center justify-center mb-10 h-[400px] relative dark:bg-gray-800 dark:z-[-10]">
         <h3 className="text-5xl leading-snug mb-10 font-medium ">Skills</h3>
         <div className="flex flex-row gap-10 xs:grid xs:grid-cols-3 xs:gap-y-4">
           {skills.map((skill, index) => (
