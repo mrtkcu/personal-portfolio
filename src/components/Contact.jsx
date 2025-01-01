@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <section className="flex flex-row justify-center items-center pt-[10rem] sm2:pt-[3rem] pb-[5rem] gap-[4rem] xs:flex-col xs:mt-[3rem]">
+    <section className="flex flex-row justify-center items-center pt-[10rem] sm2:pt-[3rem] pb-[5rem] gap-[4rem] xs:flex-col xs:mt-[3rem] ">
       <div className="text-5xl font-light leading-snug sm2:text-4xl xs:text-3xl">
         <p className="relative ">
           Let's work{" "}

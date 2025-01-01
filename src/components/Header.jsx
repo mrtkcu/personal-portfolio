@@ -1,32 +1,30 @@
 import "../styles/Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import DarkModeToggle from "./DarkModeToggle";
 
 const Header = () => {
   return (
     <header className="bg-darkwhite -z-20">
-      <section className="p-16 w-[80%] mx-auto ">
+      <section className="p-16 w-[80%] mx-auto relative">
+        <span className="absolute w-[111px] h-[111px] bg-lightgrey rounded-full top-[-6%] left-[30%]"></span>
+
         <div className="mb-48 flex justify-end gap-6 lg-sm:justify-center xs:mb-24">
-          <button className="relative inline-flex items-center h-6 rounded-full w-12 bg-lightblue transition-all duration-300 ease-in-out hover:bg-skyblue">
-            <span className="absolute left-0 h-4 w-4 bg-yellow rounded-full shadow transform transition-transform duration-300 ease-in-out"></span>
-          </button>
-          <a className="block" href="">
-            DARK MODE
-          </a>
+          <DarkModeToggle />
           <span className="mx-3 block">|</span>
           <a className="block" href="">
             <span className="text-lightblue">TÜRKÇE </span> 'YE GEÇ
           </a>
         </div>
         <div>
-          <div className="flex justify-between items-center lg-sm:flex lg-sm:flex-col lg-sm:items-start lg-sm:gap-12">
+          <div className="flex justify-center gap-20 items-center lg-sm:flex lg-sm:flex-col lg-sm:items-start lg-sm:gap-12">
             <div className="w-[45%] lg-sm:w-[100%] lg-sm:mb-10">
               <p className="text-3xl mb-8 font-light">
                 {" "}
                 <span className="tracking-wider xs:text-md">Hi!&#128075;</span>
               </p>
               <h3 className="text-5xl xl-sm:text-4xl leading-snug mb-20 font-medium xs:text-3xl">
-                <span className="text-black relative z-0">
+                <span className=" relative z-0">
                   I'm Mur
                   <span className="absolute right-3 top-9 w-full h-[30px] bg-lightblue rounded -z-10 xl-sm:h-[20px] xl-sm: right-2 top-7 lg-sm:top-6"></span>
                 </span>
@@ -52,7 +50,7 @@ const Header = () => {
                 >
                   <FontAwesomeIcon
                     icon={faGithub}
-                    className="text-black text-4xl xs:text-3xl"
+                    className=" text-4xl xs:text-3xl"
                   />
                 </a>
               </div>
@@ -79,16 +77,18 @@ const Header = () => {
                 </span>
               </p>
             </div>
-            <div className="relative z-0 xs:w-[200px] xs:h-[200px]">
-              <span className="absolute bg-lightblue w-[500px] h-[500px] xl-sm:w-[400px] xl-sm:h-[400px] lg-sm:w-[300px] lg-sm:h-[300px] xs:w-[200px] xs:h-[200px] right-5 bottom-5 xs:right-3 xs:bottom-3 -z-10 rounded-3xl"></span>
+            <div className="relative z-0 ">
+              <span className="absolute bg-lightblue w-[341px] h-[341px] bottom-4 right-4 xl-sm:w-[241px] xl-sm:h-[241px] lg-sm:w-[141px] lg-sm:h-[141px] lg-sm:bottom-1 lg-sm:right-1 lg-sm: sm2:w-[141px] sm2:h-[141px] sm2:right-1 sm2:bottom-1 xs:w-[141px] xs:h-[141px] -z-10 rounded-3xl"></span>
               <img
                 src="https://avatars.githubusercontent.com/u/53698763?v=4"
-                className="rounded-3xl w-[500px] h-[500px] xl-sm:w-[400px] xl-sm:h-[400px] lg-sm:w-[300px] lg-sm:h-[300px] xs:w-[200px] xs:h-[200px]"
+                className="rounded-3xl w-[341px] h-[341px] xl-sm:w-[241px] xl-sm:h-[241px] lg-sm:w-[141px] lg-sm:h-[141px] xs:w-[141px] xs:h-[141px]"
                 alt="a"
               />
             </div>
           </div>
         </div>
+        <span className="absolute w-[121px] h-[121px] border-[1.3rem] border-lightgrey rounded-full right-[23%] top-[93%] sm2:top-[97%] sm2:w-[60px] sm2:h-[60px] sm2:border-[.5rem]  xs:border-[.5rem] xs:top-[97%] xs:w-[75px] xs:h-[75px]"></span>
+        <span className="absolute w-[217px] h-[59px] bg-lightblue rounded-full right-[-18%] top-[85%] sm2:right-[-50%] sm2:h-[30px] xs:right-[-60%] xs:w-[150px] xs:h-[25px]"></span>
       </section>
     </header>
   );

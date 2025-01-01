@@ -1,14 +1,14 @@
 function Profile() {
   return (
     <>
-      <div className="bg-darkwhite">
+      <div className="bg-darkwhite dark:bg-gray-900 dark:text-white">
         <section className=" mt-10 mb-10 h-[500px] xl-sm:h-[600px] mx-auto">
           <h4 className="text-4xl leading-snug pt-10 pb-10 font-medium text-center">
             Profile
           </h4>
 
           <div className="flex justify-center gap-10 xs:gap-0">
-            <div className="bg-white w-[25%] xl-sm:w-[50%] xl-sm:max-h-[400px] flex flex-col gap-4 p-10 rounded-lg border-b-8 border-r-8 border-lightgrey xs:p-4">
+            <div className="bg-white dark:bg-gray-800 w-[25%] xl-sm:w-[50%] xl-sm:max-h-[500px] xs:p-4 flex flex-col gap-4 p-10 rounded-lg border-b-8 border-r-8 dark:border-gray-500 ">
               <h5 className="text-3xl text-pink mb-5 font-playfair xs:text-xl">
                 Basic Information
               </h5>
@@ -25,7 +25,7 @@ function Profile() {
             </div>
             <div className="w-[25%] xl-sm:w-[50%] p-6 xs:p-4">
               <h5 className="text-3xl mb-5 font-playfair xs:text-xl">
-                <span className="text-black relative z-0">
+                <span className="relative z-0">
                   About m
                   <span className="absolute right-5 top-5 w-[100px] h-[20px] bg-lightblue -z-10 xs:w-[60px] xs:h-[10px]"></span>
                 </span>

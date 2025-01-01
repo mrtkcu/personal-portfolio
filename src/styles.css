@@ -12,3 +12,19 @@ body {
   font-style: normal;
   overflow-x: hidden;
 }
+
+html.dark body {
+  @apply bg-gray-900 text-white;
+}
+
+html.dark header {
+  @apply bg-gray-900;
+}
+
+html:not(.dark) header {
+  @layer bg-lightwhite;
+}
+
+.skills {
+  @apply bg-gray-900;
+}
