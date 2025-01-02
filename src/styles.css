@@ -17,6 +17,7 @@ body {
   font-weight: 500;
   font-style: normal;
   overflow-x: hidden;
+  @layer scale-50;
 }
 
 html.dark body {
