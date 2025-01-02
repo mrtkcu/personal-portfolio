@@ -1,7 +1,7 @@
 {
   "hi": "Merhaba!",
   "welcome-underlined": "Ben Mur",
-  "welcome": "Full-Stack web geliştiricisiyim. Sağlam ve ölçeklenebilir frontend ürünleri geliştirebilirim. Hadi Tanışalım!",
+  "welcome": "Full-Stack web geliştiricisiyim. Sağlam ve ölçeklenebilir frontend ürünleri geliştirebilirim. Hadi tanışalım !",
   "freelancing_status": "Şu anda <span class='text-lightblue hover:text-blue3'>Freelance</span> olarak <span class='text-lightblue hover:text-blue3'>UX, UI, & Web Tasarım</span> Projesi üzerinde çalışıyorum.",
   "invite": "Takımına katılmam için beni davet et",
 
@@ -19,5 +19,8 @@
   "about-1": "Yaratıcı ve çözüm odaklı bir full-stack geliştiriciyim.",
   "about-2": " Karmaşık problemleri çözmekten ve kullanıcı dostu tasarımlarla işlevselliği birleştiren yenilikçi çözümler oluşturmaktan keyif alıyorum. Motivasyonum yüksek ve yaratıcılığımla harika projelere imza atmaya hazırım!",
 
-  "projects": "Projeler"
+  "projects": "Projeler",
+
+  "githubText": "Github'ta görüntüle",
+  "appText": "App'e git"
 }
