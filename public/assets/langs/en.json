@@ -1,0 +1,24 @@
+{
+  "hi": "Hi!",
+  "welcome-underlined": "I'm Mur",
+  "welcome": "I'm a full-stack developer. I can craft solid and scalable frontend products. Let's meet!",
+  "freelancing_status": "Currently <span class='text-lightblue hover:text-blue3'>Freelancing</span> for <span class='text-lightblue hover:text-blue3'>UX, UI, & Web Design</span> Project.",
+  "invite": "Invite me to join your team",
+
+  "skills": "Skills",
+  "profile": "Profile",
+
+  "basic-info": "Basic Information",
+  "birthdate": "Birth Date",
+  "city": "City of Residence",
+  "education-status": "Education Status",
+  "education": "Cukurova Uni. BSc Computer Eng, 2021",
+  "role-preference": "Preferred Role",
+
+  "about-title": "About me",
+  "about-1": "I’m a full-stack developer passionate about crafting seamless digital experiences. ",
+  "about-2": "Motivated and creative, I thrive on solving complex problems and building innovative solutions that merge functionality with user-friendly design. Let’s create something amazing together!",
+
+  "projects": "Projects",
+  "project-name": ""
+}

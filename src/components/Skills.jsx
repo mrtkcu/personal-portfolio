@@ -1,11 +1,13 @@
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import axios from "axios";
+import { LanguageContext } from "../context/LanguageContext";
 
 function Skills() {
   const [skills, setSkills] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const { translations } = useContext(LanguageContext);
 
   useEffect(() => {
     axios
@@ -30,7 +32,9 @@ function Skills() {
   return (
     <div className="relative">
       <section className="mt-10 flex flex-col items-center justify-center mb-10 h-[400px] relative dark:bg-gray-800 dark:z-[-10]">
-        <h3 className="text-5xl leading-snug mb-10 font-medium ">Skills</h3>
+        <h3 className="text-5xl leading-snug mb-10 font-medium ">
+          {translations.skills}
+        </h3>
         <div className="flex flex-row gap-10 xs:grid xs:grid-cols-3 xs:gap-y-4">
           {skills.map((skill, index) => (
             <div key={index} className="">

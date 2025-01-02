@@ -4,15 +4,18 @@ import Skills from "./components/Skills";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import { LanguageProvider } from "./context/LanguageContext";
 
 function App() {
   return (
     <>
-      <Header />
-      <Skills />
-      <Profile />
-      <Projects />
-      <Contact />
+      <LanguageProvider>
+        <Header />
+        <Skills />
+        <Profile />
+        <Projects />
+        <Contact />
+      </LanguageProvider>
     </>
   );
 }

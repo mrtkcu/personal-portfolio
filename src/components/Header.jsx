@@ -2,8 +2,12 @@ import "../styles/Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import DarkModeToggle from "./DarkModeToggle";
+import { LanguageContext } from "../context/LanguageContext";
+import { useContext } from "react";
 
 const Header = () => {
+  const { language, switchLanguage, translations } =
+    useContext(LanguageContext);
   return (
     <header className="bg-darkwhite -z-20">
       <section className="p-16 w-[80%] mx-auto relative">
@@ -12,24 +16,39 @@ const Header = () => {
         <div className="mb-48 flex justify-end gap-6 lg-sm:justify-center xs:mb-24">
           <DarkModeToggle />
           <span className="mx-3 block">|</span>
-          <a className="block" href="">
-            <span className="text-lightblue">TÜRKÇE </span> 'YE GEÇ
-          </a>
+          {language === "en" ? (
+            <a
+              onClick={() => switchLanguage("tr")}
+              className="block cursor-pointer"
+              href=""
+            >
+              <span className="text-lightblue">TÜRKÇE </span> 'YE GEÇ
+            </a>
+          ) : (
+            <a
+              onClick={() => switchLanguage("en")}
+              className="block cursor-pointer"
+              href=""
+            >
+              <span className="text-lightblue">SWITCH TO ENGLISH</span>
+            </a>
+          )}
         </div>
         <div>
           <div className="flex justify-center gap-20 items-center lg-sm:flex lg-sm:flex-col lg-sm:items-start lg-sm:gap-12">
             <div className="w-[45%] lg-sm:w-[100%] lg-sm:mb-10">
               <p className="text-3xl mb-8 font-light">
                 {" "}
-                <span className="tracking-wider xs:text-md">Hi!&#128075;</span>
+                <span className="tracking-wider xs:text-md">
+                  {translations["hi"]} &#128075;
+                </span>
               </p>
               <h3 className="text-5xl xl-sm:text-4xl leading-snug mb-20 font-medium xs:text-3xl">
                 <span className=" relative z-0">
-                  I'm Mur
+                  {translations["welcome-underlined"]}
                   <span className="absolute right-3 top-9 w-full h-[30px] bg-lightblue rounded -z-10 xl-sm:h-[20px] xl-sm: right-2 top-7 lg-sm:top-6"></span>
                 </span>
-                at. I'm a full-stack developer. I can craft solid and scalable
-                frontend products. Let's meet!
+                at. {translations["welcome"]}
               </h3>
               <div className="mb-4 ">
                 <a
@@ -54,19 +73,14 @@ const Header = () => {
                   />
                 </a>
               </div>
-              <p className="text-lg font-light mb-1 xs:text-sm">
-                Currently{" "}
-                <span className="text-lightblue hover:text-blue3 ">
-                  Freelancing
-                </span>{" "}
-                for{" "}
-                <span className="text-lightblue hover:text-blue3">
-                  UX, UI, & Web Design
-                </span>{" "}
-                Project.
-              </p>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: translations.freelancing_status,
+                }}
+                className="text-lg font-light mb-1 xs:text-sm"
+              ></p>
               <p className="text-lg font-light xs:text-sm">
-                Invite me to join your team &rarr;
+                {translations.invite} &rarr;
                 <span className="text-lightblue underline tracking-wider ml-2 ">
                   <a
                     className="hover:text-blue3 xs:text-xs"

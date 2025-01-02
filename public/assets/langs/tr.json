@@ -1,0 +1,23 @@
+{
+  "hi": "Merhaba!",
+  "welcome-underlined": "Ben Mur",
+  "welcome": "Full-Stack web geliştiricisiyim. Sağlam ve ölçeklenebilir frontend ürünleri geliştirebilirim. Hadi Tanışalım!",
+  "freelancing_status": "Şu anda <span class='text-lightblue hover:text-blue3'>Freelance</span> olarak <span class='text-lightblue hover:text-blue3'>UX, UI, & Web Tasarım</span> Projesi üzerinde çalışıyorum.",
+  "invite": "Takımına katılmam için beni davet et",
+
+  "skills": "Teknolojiler",
+  "profile": "Profil",
+
+  "basic-info": "Temel Bilgiler",
+  "birthdate": "Doğum Tarihi",
+  "city": "İkamet Şehri",
+  "education-status": "Eğitim Durumu",
+  "education": "Çukurova Ünv. Bilgisayar Müh Lisans, 2021",
+  "role-preference": "Tercih Ettiği Rol",
+
+  "about-title": "Hakkımda",
+  "about-1": "Yaratıcı ve çözüm odaklı bir full-stack geliştiriciyim.",
+  "about-2": " Karmaşık problemleri çözmekten ve kullanıcı dostu tasarımlarla işlevselliği birleştiren yenilikçi çözümler oluşturmaktan keyif alıyorum. Motivasyonum yüksek ve yaratıcılığımla harika projelere imza atmaya hazırım!",
+
+  "projects": "Projeler"
+}
