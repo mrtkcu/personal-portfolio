@@ -22,5 +22,10 @@
   "projects": "Projects",
 
   "githubText": "View on Github",
-  "appText": "Go to App"
+  "appText": "Go to App",
+
+  "contactText-1": "Let's work together on ",
+  "contactText-2": "on your next product. ",
+
+  "coffee": "Buy me"
 }

@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import Toastify from "toastify-js";
+import "toastify-js/src/toastify.css";
 
 const DarkModeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -11,6 +13,31 @@ const DarkModeToggle = () => {
     }
   }, []);
 
+  // Show toast only when dark mode state changes
+  useEffect(() => {
+    if (isDarkMode) {
+      Toastify({
+        text: "Dark Mode Activated!",
+        duration: 1000, // 3 seconds
+        backgroundColor: "green",
+        close: true,
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true,
+      }).showToast();
+    } else {
+      Toastify({
+        text: "Light Mode Activated!",
+        duration: 1000, // 3 seconds
+        backgroundColor: "lightblue",
+        close: true,
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true,
+      }).showToast();
+    }
+  }, [isDarkMode]); // Only run when `isDarkMode` state changes
+
   const toggleDarkMode = () => {
     setIsDarkMode((prevMode) => {
       const newMode = !prevMode;
@@ -20,6 +47,7 @@ const DarkModeToggle = () => {
         document.documentElement.classList.remove("dark");
       }
       localStorage.setItem("darkMode", newMode.toString());
+
       return newMode;
     });
   };
@@ -27,13 +55,13 @@ const DarkModeToggle = () => {
   return (
     <button
       onClick={toggleDarkMode}
-      className={`relative inline-flex items-center h-6 rounded-full w-12 transition-all duration-300 ease-in-out xs:bg-white ${
+      className={`relative inline-flex items-center h-6 rounded-full w-12 xs:w-18 xs:h-9 transition-all duration-300 ease-in-out  ${
         isDarkMode ? "bg-gray-800" : "bg-lightblue"
       }`}
     >
       <span
-        className={`absolute h-4 w-4 bg-yellow rounded-full shadow transform transition-transform duration-300 ease-in-out ${
-          isDarkMode ? "translate-x-6 bg-gray-400" : "translate-x-0"
+        className={`absolute h-4 w-4 bg-yellow xs:h-6 xs:w-6 rounded-full shadow transform transition-transform duration-300 ease-in-out ${
+          isDarkMode ? "translate-x-6  bg-gray-400" : "translate-x-0"
         }`}
       ></span>
     </button>

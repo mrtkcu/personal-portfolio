@@ -1,4 +1,3 @@
-import "../styles/Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import DarkModeToggle from "./DarkModeToggle";
@@ -13,9 +12,9 @@ const Header = () => {
       <section className="p-16 w-[80%] mx-auto relative">
         <span className="absolute w-[111px] h-[111px] bg-lightgrey rounded-full top-[-6%] left-[30%]"></span>
 
-        <div className="mb-48 flex justify-end gap-6 lg-sm:justify-center xs:mb-24">
+        <div className="mb-48 flex justify-end gap-6 lg-sm:justify-center xs:mb-24 xxs:flex-col xxs:items-center">
           <DarkModeToggle />
-          <span className="mx-3 block">|</span>
+          <span className="mx-3 block xxs:hidden">|</span>
           {language === "en" ? (
             <a
               onClick={() => switchLanguage("tr")}

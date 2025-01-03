@@ -22,5 +22,10 @@
   "projects": "Projeler",
 
   "githubText": "Github'ta görüntüle",
-  "appText": "App'e git"
+  "appText": "App'e git",
+
+  "contactText-1": "Bir sonraki ürününüz için ",
+  "contactText-2": "beraber çalışalım. ",
+
+  "coffee": "Kahve"
 }
